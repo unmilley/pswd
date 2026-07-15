@@ -1,0 +1,7 @@
+# https://pnpm.io/settings
+
+blockExoticSubdeps: true
+dedupePeers: true
+ignoreWorkspaceRootCheck: true
+minimumReleaseAgeExclude:
+trustPolicy: no-downgrade
