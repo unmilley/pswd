@@ -12,9 +12,9 @@
 - [Why this package?](#why-this-package)
 - [Installation](#installation)
 - [API](#api)
-  - [`generatePassword()`](#generatePasswordoptions)
-  - [`generateMemorablePassword()`](#generateMemorableOptions)
-  - [`generateLiteMemorablePassword()`](#generateliteMemorableOptions)
+  - [`generatePassword()`](#generatepasswordoptions)
+  - [`generateMemorableLite()`](#generatememorableliteoptions)
+  - [`generateMemorable()`](#generatememorableoptions)
   - [`generatePin()`](#generatepinoptions)
 - [FAQ](#faq)
 - [Security](#security)
@@ -419,11 +419,11 @@ Instead, report it privately by contacting the project maintainer or using GitHu
 
 [MIT][license-href]. Made with 💛
 
-[npm-version-src]: https://img.shields.io/npm/v/@unmilley/pswd?style=flat&colorA=18181B&colorB=fbd38d
+[npm-version-src]: https://img.shields.io/npm/v/@unmilley/pswd?style=flat&labelColor=18181B&color=fbd38d
 [npm-version-href]: https://npmjs.com/package/@unmilley/pswd
-[npm-downloads-src]: https://img.shields.io/npm/dm/@unmilley/pswd?style=flat&colorA=18181B&colorB=fbd38d
+[npm-downloads-src]: https://img.shields.io/npm/dm/@unmilley/pswd?style=flat&labelColor=18181B&color=fbd38d
 [npm-downloads-href]: https://npmjs.com/package/@unmilley/pswd
-[TypeScript-src]: https://img.shields.io/badge/100%-3178C6?logo=typescript&logoColor=white&style=flat&colorA=18181B&colorB=fbd38d
-[TypeScript-href]: https://www.typescriptlang.org
-[license-src]: https://img.shields.io/github/license/unmilley/pswd.svg?style=flat&colorA=18181B&colorB=fbd38d
+[typescript-src]: https://img.shields.io/badge/100%25-3178C6?style=flat&logo=typescript&logoColor=white&labelColor=18181B&color=fbd38d
+[typescript-href]: https://www.typescriptlang.org
+[license-src]: https://img.shields.io/github/license/unmilley/pswd.svg?style=flat&labelColor=18181B&color=fbd38d
 [license-href]: https://github.com/unmilley/pswd/blob/main/LICENSE
