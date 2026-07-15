@@ -1,55 +1,67 @@
 {
-	"name": "@unmilley/pswd",
-	"version": "0.0.0",
-	"description": "Generate secure passwords, memorable phrases, and PIN codes with customizable options",
-	"keywords": [
-		"generator",
-		"memorable",
-		"password",
-		"pin",
-		"secure",
-		"typescript",
-		"utility"
-	],
-	"homepage": "https://github.com/unmilley/pswd#readme",
-	"bugs": {
-		"url": "https://github.com/unmilley/pswd/issues"
-	},
-	"license": "MIT",
-	"author": "Alexandr Lyadov <hello@milley.uno> (https://milley.uno/)",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/unmilley/pswd.git"
-	},
-	"files": [
-		"dist"
-	],
-	"type": "module",
-	"sideEffects": false,
-	"types": "./dist/index.d.mts",
-	"exports": {
-		".": "./dist/index.mjs"
-	},
-	"scripts": {
-		"build": "obuild",
-		"dev": "vitest dev",
-		"fmt": "oxlint . --fix && oxfmt .",
-		"lint": "oxlint . && oxfmt .",
-		"prepack": "pnpm build",
-		"release": "pnpm test && pnpm build && changelogen --release && npm publish && git push --follow-tags",
-		"test": "pnpm lint && pnpm typecheck && vitest run --coverage",
-		"typecheck": "tsgo --noEmit --skipLibCheck"
-	},
-	"devDependencies": {
-		"@types/node": "latest",
-		"@typescript/native-preview": "latest",
-		"changelogen": "latest",
-		"@vitest/coverage-v8": "latest",
-		"obuild": "latest",
-		"oxfmt": "latest",
-		"oxlint": "latest",
-		"typescript": "^6",
-		"vitest": "latest"
-	},
-	"packageManager": "pnpm@11.12.0"
+  "name": "@unmilley/pswd",
+  "version": "0.0.0",
+  "description": "Generate secure passwords, memorable phrases, and PIN codes with customizable options",
+  "keywords": [
+    "generator",
+    "memorable",
+    "password",
+    "pin",
+    "secure",
+    "typescript",
+    "utility"
+  ],
+  "homepage": "https://github.com/unmilley/pswd#readme",
+  "bugs": {
+    "url": "https://github.com/unmilley/pswd/issues"
+  },
+  "license": "MIT",
+  "author": "Alexandr Lyadov <hello@milley.uno> (https://milley.uno/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unmilley/pswd.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./memorable": {
+      "types": "./dist/memorable/index.d.mts",
+      "default": "./dist/memorable/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "obuild",
+    "dev": "vitest dev",
+    "fmt": "oxlint . --fix && oxfmt .",
+    "lint": "oxlint . && oxfmt .",
+    "prepack": "pnpm build",
+    "release": "pnpm test && pnpm build && changelogen --release && npm publish && git push --follow-tags",
+    "prerelease": "docs2readme -s",
+    "test": "pnpm lint && pnpm typecheck && vitest run --coverage",
+    "typecheck": "tsgo --noEmit --skipLibCheck"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@typescript/native-preview": "latest",
+    "@vitest/coverage-v8": "latest",
+    "changelogen": "latest",
+    "docs2readme": "^1.1.0",
+    "obuild": "latest",
+    "oxfmt": "latest",
+    "oxlint": "latest",
+    "typescript": "^6.0.3",
+    "vitest": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@11.12.0"
 }

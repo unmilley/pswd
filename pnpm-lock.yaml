@@ -10,7 +10,7 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: latest
+        specifier: ^26.1.1
         version: 26.1.1
       '@typescript/native-preview':
         specifier: latest
@@ -21,6 +21,9 @@ importers:
       changelogen:
         specifier: latest
         version: 0.6.2(magicast@0.5.3)
+      docs2readme:
+        specifier: ^1.1.0
+        version: 1.1.0
       obuild:
         specifier: latest
         version: 0.4.38(@typescript/native-preview@7.0.0-dev.20260707.2)(chokidar@5.0.0)(dotenv@17.4.2)(giget@3.3.0)(jiti@2.7.0)(magicast@0.5.3)(typescript@6.0.3)
@@ -31,7 +34,7 @@ importers:
         specifier: latest
         version: 1.74.0
       typescript:
-        specifier: ^6
+        specifier: ^6.0.3
         version: 6.0.3
       vitest:
         specifier: latest
@@ -709,6 +712,9 @@ packages:
     resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
     engines: {node: '>= 20.19.0'}
 
+  citty@0.2.2:
+    resolution: {integrity: sha512-+6vJA3L98yv+IdfKGZHBNiGW5KHn22e/JwID0Strsz8h4S/csAu/OuICwxrg44k5MRiZHWIo8XXuJgQTriRP4w==}
+
   confbox@0.2.4:
     resolution: {integrity: sha512-ysOGlgTFbN2/Y6Cg3Iye8YKulHw+R2fNXHrgSmXISQdMnomY6eNDprVdW9R5xBguEqI954+S6709UyiO7B+6OQ==}
 
@@ -743,6 +749,10 @@ packages:
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
+
+  docs2readme@1.1.0:
+    resolution: {integrity: sha512-oKam7owiO7MCRxSzewtaApJOv9RGXjBUP6Su/di23wqdxXeXa66CStvzjHEsP86YmMXPX2TFjVYRmOhpG2AUrA==}
+    hasBin: true
 
   dotenv@17.4.2:
     resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
@@ -1651,6 +1661,8 @@ snapshots:
     dependencies:
       readdirp: 5.0.0
 
+  citty@0.2.2: {}
+
   confbox@0.2.4: {}
 
   consola@3.4.2: {}
@@ -1673,6 +1685,11 @@ snapshots:
   destr@2.0.5: {}
 
   detect-libc@2.1.2: {}
+
+  docs2readme@1.1.0:
+    dependencies:
+      citty: 0.2.2
+      consola: 3.4.2
 
   dotenv@17.4.2: {}
 
