@@ -1,6 +1,6 @@
 {
   "name": "@unmilley/pswd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate secure passwords, memorable phrases, and PIN codes with customizable options",
   "keywords": [
     "generator",
